@@ -1,0 +1,253 @@
+div.total-page {
+  background-color: rgb(53,101,77);
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  text-shadow: 0 2px 4px greenyellow ;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+
+
+
+.backSq{  
+}
+// ---------- computer -----------
+// div.computer-container {
+//   border: solid black 1px;
+//   height: 150px;
+//   width: 100px;
+// }
+// .computer-container .t-l {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: 2px;
+//   left: -10px;
+// }
+// .computer-container .t-r {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: -23px;
+//   left: 59px;
+// }
+// .computer-container .l-l {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: -4px;
+//   left: -10px;
+//   transform: rotate(3.142rad);
+// }
+// .computer-container .l-r {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: -29px;
+//   left: 59px;
+//   transform: rotate(3.142rad);
+// }
+// .computer-container .c-c {
+//   border: solid rgb(0, 0, 0) 1px;
+//   height: 75px;
+//   width: 50px;
+//   position: relative;
+//   top: -14px;
+//   left: 13px;
+//   font-size: 200%;
+// }
+
+// ---------- player -----------
+// div.player-container {
+//   border: solid black 1px;
+//   height: 150px;
+//   width: 100px;
+// }
+// .player-container .t-l {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: 2px;
+//   left: -10px;
+// }
+// .player-container .t-r {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: -23px;
+//   left: 59px;
+// }
+// .player-container .l-l {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: -4px;
+//   left: -10px;
+//   transform: rotate(3.142rad);
+// }
+// .player-container .l-r {
+//   height: 25px;
+//   width: 25px;
+//   position: relative;
+//   top: -29px;
+//   left: 59px;
+//   transform: rotate(3.142rad);
+// }
+// .player-container .c-c {
+//   border: solid rgb(0, 0, 0) 1px;
+//   height: 75px;
+//   width: 50px;
+//   position: relative;
+//   top: -14px;
+//   left: 13px;
+//   font-size: 200%;
+// }
+
+// .pot-container {
+//   height: 150px;
+//   width: 80vw;
+//   max-width: 400px;
+// }
+
+// .pot-container .btn-warning {
+//   position: relative;
+//   top: 5px;
+//   left: 155px;
+// }
+
+// header {
+//   color: #ffffff;
+//   background: rgba(66, 66, 247, 0);
+//   text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+//     0 -18px 40px #f00;
+// }
+
+// footer {
+//   color: #ffffff;
+//   background: #ece9e900;
+//   text-shadow: 3px 5px 2px #474747;
+// }
+
+// -------------------------------
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+// --------animated text---------
+.PULSE {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: PULSE 1s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: PULSE 1s infinite;
+
+  /* Standard Syntax */
+  animation: PULSE 1.25s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes PULSE {
+  0% {
+    color: rgba(255, 0, 255);
+  }
+  110% {
+    color: black;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes PULSE {
+  0% {
+    color: rgba(255, 255, 0);
+  }
+  110% {
+    color: black;
+  }
+}
+
+/* Standard Syntax */
+@keyframes PULSE {
+  0% {
+    color: #25b7f1de;
+  }
+  110% {
+    color: black;
+  }
+}
+
+// -------------------------
+
+#demotext {
+  color: #ffffff;
+
+  text-shadow: -5px 5px 0px #333fa7da, -10px 10px 0px #333fa77a,
+    -15px 15px 0px #333fa72f;
+  color: #ffffff;
+}
+
+// -------- cards counter---------
+
+.count {
+  color: #ffffff;
+
+  text-shadow: -5px 5px 0px #af5f1427, -10px 10px 0px #333fa700,
+    -15px 15px 0px #333fa700;
+  color: #ffffff;
+}
+
+// --------------------
+
+@media (height < 720px) {
+  h1 {
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}

@@ -1,0 +1,77 @@
+<div class="d-flex flex-column min-vh-100 total-page">
+  <header>
+    <h1 class="text-center mt-5">Cards of War</h1>
+  </header>
+
+  <main class="d-flex-column flex-fill justify-content-center">
+    <div class="container">
+      <!-- computer -->
+
+      <div class="computer text-center fs-5">
+        Computer Deck:
+        <span class="fw-bold fs-3 count">{{ computerDeck.length }}</span>
+<div class="container backSq">
+        <div class="container computer-container mt-4">
+        <img [src]='cardsImgSrcCu'>
+      </div>
+      </div>
+
+      <!-- pot -->
+      <div class="container text-center mt-4 mb-4">
+        <button
+          *ngIf="cardDeck.length; else hit"
+          (click)="splitDeck(cardDeck, computerDeck, playerDeck)"
+          type="button"
+          class="btn btn-success col-6"
+         [disabled]="dis2"
+        >
+          Shuffle & Deal
+        </button>
+
+        <ng-template #hit>
+          <div *ngIf="winnerIs != '😡 Let`s go to WaR 😡'; else draw">
+            <button (click)="hitCard()" type="button" [disabled]="dis" class ="btn btn-warning">
+              Hit<i class="bi bi-exclamation-lg"></i></button
+            ><br />
+
+            <div class="fs-1" id="demotext">{{ winnerIs }}</div>
+          </div>
+        </ng-template>
+        <ng-template class="text-center" #draw>
+          <div class="fs-1" id="demotext"></div>
+          <br />
+          <div>
+            <div class="lds-hourglass">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          <span class="PULSE fs-2">😡 War is going on 😡</span>
+          <div class="lds-hourglass">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          </div>
+          <br />
+        </ng-template>
+      </div>
+
+      <!-- player -->
+      <div class="container">
+        <div class="container player-container mt-2">
+          <img [src]='cardsImgSrcPlayer' >
+        </div>
+
+        <div class="player text-center fs-5 mt-4">
+          Your Deck:
+          <span class="fw-bold fs-3 count">{{ playerDeck.length }}</span>
+        </div>
+      </div>
+    </div>
+  <!-- </main> -->
+
+  <footer class="d-flex justify-content-center">
+    <div>&copy; M.o.S.y | 2022</div>
+  </footer>
+</div>
